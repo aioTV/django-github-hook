@@ -38,7 +38,7 @@ Examples
 --------
 
 The following snippet show how to connect the webhook to a method using django's signal mechanism.
-Note that path must be set to "send-signal" in the hook object instead of an absolute path to a script.
+Note that path must be left blank in the hook object instead of an absolute path to a script.
 
 .. code-block:: python
 

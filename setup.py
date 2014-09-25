@@ -23,7 +23,7 @@ def long_description():
 
 setup(
     name='django-github-hook',
-    version='0.1.0',
+    version='0.1.0-aio',
     description='Django-powered GitHub (& Bitbucket) web hooks',
     long_description=long_description(),
     author='S. Andrew Sheppard, Hugo Geoffroy',

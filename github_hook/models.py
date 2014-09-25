@@ -9,7 +9,7 @@ class Hook(models.Model):
     name = models.CharField(max_length=255)
     user = models.CharField(max_length=255)
     repo = models.CharField(max_length=255)
-    path = models.CharField(max_length=255)
+    path = models.CharField(max_length=255, blank=True)
 
     def execute(self):
         subprocess.call([self.path])

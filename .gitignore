@@ -2,3 +2,5 @@ build/
 
 *~
 *.pyc
+dist
+django_github_hook.egg-info
