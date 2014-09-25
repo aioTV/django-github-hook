@@ -56,7 +56,7 @@ class HookView(GenericAPIView):
                 if hook.path:
                     hook.execute()
                 else:
-                    hook_signal.send(HookView, info=info, repo=repo,
+                    hook_signal.send(HookView, repo=repo, payload=payload,
                                      user=user, request=request)
 
         except Hook.DoesNotExist:
